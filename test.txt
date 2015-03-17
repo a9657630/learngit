@@ -15,3 +15,4 @@ git reset --hard HEAD^
 git reset --hard commit_id
 git log 可以查看提交历史，以便确定要回退到哪个版本。
 git reflog 查看命令历史,以便确定回退到哪个版本
+
