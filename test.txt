@@ -3,6 +3,8 @@ Git is free software.
 Git is free software distributed under the GPL.
 Git tracks changes of files.
 
+test line
+
 中文
 
 git init
