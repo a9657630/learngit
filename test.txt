@@ -1,0 +1,5 @@
+Git is a version control system.
+Git is free software.
+
+
+"已婚双亲家庭中的孩子","单亲家庭中的孩子","单身","已婚无子", "已婚有子","单亲家庭中的户主","非家庭成员","其他家庭成员"
