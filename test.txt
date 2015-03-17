@@ -7,3 +7,7 @@ Git is free software.
 git init
 git add filename
 git commit -m "comments"
+
+git status
+git diff
+
