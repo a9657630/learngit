@@ -3,7 +3,7 @@ Git is free software.
 Git is free software distributed under the GPL.
 Git tracks changes of files.
 
-test line
+test lines
 
 中文
 
@@ -21,3 +21,5 @@ git reflog 查看命令历史,以便确定回退到哪个版本
 
 暂存区stage
 分支master
+
+git diff HEAD -- test.txt 查看工作区和版本库里面最新版本的区别
