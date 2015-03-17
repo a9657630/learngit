@@ -11,3 +11,4 @@ git commit -m "comments"
 git status
 git diff
 
+git is free software distributed under the GPL.
