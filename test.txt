@@ -1,6 +1,7 @@
 Git is a version control system.
 Git is free software.
-git is free software distributed under the GPL.
+Git is free software distributed under the GPL.
+Git tracks changes.
 
 中文
 
@@ -16,3 +17,5 @@ git reset --hard commit_id
 git log 可以查看提交历史，以便确定要回退到哪个版本。
 git reflog 查看命令历史,以便确定回退到哪个版本
 
+暂存区stage
+分支master
