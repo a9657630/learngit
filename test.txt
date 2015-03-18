@@ -34,3 +34,7 @@ git commit
 ssh-keygen -t rsa -C "email"
 
 test
+
+git remote add origin https://github.com/username/learngit.git
+git push -u origin master
+git push origin master
