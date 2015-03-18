@@ -57,6 +57,6 @@ git log --graph --pretty=oneline --abbrev-commit
 
 test
 
-test
+test --- bug02
 
 issue-101
