@@ -55,8 +55,11 @@ git branch -d <name> 删除分支
 
 git log --graph --pretty=oneline --abbrev-commit
 
+git branch -D <name>
+
 git stash
 git stash list
 git stash pop
 
 git merge --no-ff -m "merge with no-ff" dev
+
