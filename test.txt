@@ -86,3 +86,23 @@ git branch --set-upstream-to=origin/dev 创建本地分支与远程分支的链�
 没有冲突或者解决掉冲突后，再用git push origin branch-name推送就能成功！
 如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream branch-name origin/branch-name。
 这就是多人协作的工作模式，一旦熟悉了，就非常简单。
+
+在本地打标签:
+git tag v1.2 打标签
+git tag v0.9 <commit id> 给指定commit打标签
+git tag -a v0.9 -m "..." 添加说明
+git tag -s v0.9 -m "..." PGP签名标签
+git show v1.0 查看指定版本的说明
+git tag 查看所有标签
+
+删除本地标签:
+git tag -d v1.0
+
+推送标签:
+git push origin <tagname> 推送标签
+git push origin --tags 推送所有标签
+
+删除远程标签:
+git tag -d v0.9 先删除本地
+git push origin :refs/tags/v0.9 删除远程
+
