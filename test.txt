@@ -55,11 +55,24 @@ git branch -d <name> 删除分支
 
 git log --graph --pretty=oneline --abbrev-commit
 
-git branch -D <name>
+git stash 存储工作区
+git stash list 查看stash内容
+git stash pop 恢复stash
 
-git stash
-git stash list
-git stash pop
+git merge --no-ff -m "merge with no-ff" dev 禁用fast forward
 
-git merge --no-ff -m "merge with no-ff" dev
+修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；
+
+当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。
+
+git branch -D <name> 强制删除分支
+
+git remote 查看远程库的信息
+git remote -v 详细信息
+
+
+
+
+
+
 
