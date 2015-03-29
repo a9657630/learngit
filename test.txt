@@ -70,8 +70,11 @@ git branch -D <name> 强制删除分支
 git remote 查看远程库的信息
 git remote -v 详细信息
 
+git push origin master 推送不同的分支
+git push origin dev 推送不同的分支
 
-
+从远程库clone时，默认情况下，只能看到本地的master分支
+git checkout -b dev origin/dev 创建本地dev分支
 
 
 
