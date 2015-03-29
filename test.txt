@@ -58,3 +58,5 @@ git log --graph --pretty=oneline --abbrev-commit
 git stash
 git stash list
 git stash pop
+
+git merge --no-ff -m "merge with no-ff" dev
