@@ -1,43 +1,51 @@
-Git is a version control system.
-Git is free software.
-Git is free software distributed under the GPL.
-Git tracks changes of files.
-
-test lines
-
-中文
-
+mkdir learngit
+cd learngit
+pwd
+ls
+ls -ah
 git init
-git add filename
-git commit -m "comments"
+git add test.txt
+git add file1.txt file2.txt
+git commit -m "add test"
 
 git status
 git diff
-
-git reset --hard HEAD^
-git reset --hard commit_id
-git log 可以查看提交历史，以便确定要回退到哪个版本。
-git reflog 查看命令历史,以便确定回退到哪个版本
-
-暂存区stage
-分支master
-
 git diff HEAD -- test.txt 查看工作区和版本库里面最新版本的区别
 
+git log 可以查看提交历史，以便确定要回退到哪个版本。
+git log --pretty=oneline
+
+git reset --hard HEAD^ 回退上一个版本
+git reset --hard HEAD^^
+git reset --hard HEAD~100
+git reset --hard commit_id
+
+cat test.txt 查看文本内容
+
+git reflog 查看命令历史 可以找到回退版本的ID,确定回退到哪个版本
+
+工作区 learngit目录
+版本库 .git目录
+暂存区stage 在版本库中 "git add"命令就是把文件添加到暂存区
+分支master 在版本库中 "git commit"命令就是把暂存区所有内容提交到当前分支
+
 git checkout -- test.txt 回到最近一次git commit或git add时的状态
+	(修改后没有git add, 可用此命令撤销改动)
 git reset HEAD test.txt 既可以回退版本，也可以把暂存区的修改回退到工作区
+	(git add后, 用此命令回到git add之前的状态,即修改但没有git add的状态)
+git reset --hard head^
+	(git commit后, 用此命令会退到上一个版本)
 
-rm test.txt
-git rm
-git commit
+删除
+rm test.txt 从工作区删除
+git rm 从版本库删除
+git commit 再提交
 
-ssh-keygen -t rsa -C "email"
-
-test
+ssh-keygen -t rsa -C "gaoning1202@sina.com"
 
 git remote add origin https://github.com/username/learngit.git
 git remote add origin git@github.com/username/learngit.git
-git push -u origin master
+git push -u origin master  第一次推送master
 git push origin master
 
 git remote rm origin
