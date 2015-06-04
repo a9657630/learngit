@@ -62,6 +62,9 @@ git merge <name> 合并某分支到当前分支
 git branch -d <name> 删除分支
 
 git log --graph --pretty=oneline --abbrev-commit
+          图表    oneline             缩写
+
+
 
 git stash 存储工作区
 git stash list 查看stash内容
