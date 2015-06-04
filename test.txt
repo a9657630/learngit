@@ -64,12 +64,11 @@ git branch -d <name> 删除分支
 git log --graph --pretty=oneline --abbrev-commit
           图表    oneline             缩写
 
+git merge --no-ff -m "merge with no-ff" dev 禁用fast forward
 
 git stash 存储工作区
 git stash list 查看stash内容
 git stash pop 恢复stash
-
-git merge --no-ff -m "merge with no-ff" dev 禁用fast forward
 
 修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；
 
