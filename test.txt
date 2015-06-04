@@ -68,7 +68,10 @@ git merge --no-ff -m "merge with no-ff" dev 禁用fast forward
 
 git stash 存储工作区
 git stash list 查看stash内容
-git stash pop 恢复stash
+git stash pop 恢复stash并删除stash
+git stash apply 恢复
+git stash apply stash@{0} 恢复指定stash
+git stash drop 删除
 
 修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；
 
